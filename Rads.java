@@ -1,13 +1,22 @@
 class Rads extends ConsoleProgram {
 
   /**
-  * Description
-  * @author:
+  * this code converts degrees into radians
+  * @author: Savio. T
   */
   
   public void run() {
+    // declare variables
+    int intDegrees;
+    double dblRadians;
     
-    // start coding here
-    
+    // recieve input
+    intDegrees = readInt("What is the number of degrees? ");
+
+    // calculate input into output
+    dblRadians = intDegrees * (Math.PI / 180);
+
+    // output
+    System.out.println(intDegrees + " degrees is " + dblRadians + " radians");
   }
 }
